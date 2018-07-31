@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>学号</th>
+            <th>班级</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="name">
+            </td>
+            <td>
+                <input type="text" name="sex">
+            </td>
+            <td>
+                <input type="text" name="num">
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="submit" value="提交"> </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

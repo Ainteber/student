@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <th>学号</th>
+            <th>姓名</th>
+            <th>语文</th>
+            <th>数学</th>
+            <th>英语</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="num">
+            </td>
+            <td>
+                <input type="text" name="name">
+            </td>
+            <td>
+                <input type="text" name="Chinese">
+            </td>
+            <td>
+                <input type="text" name="Math">
+            </td>
+             <td>
+                <input type="text" name="English">
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="submit" value="提交"> </td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>

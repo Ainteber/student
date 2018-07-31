@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>所有学生信息页面</title>
+</head>
+<body>
+{% for stuinfo in stuinfos %}
+    姓名：{{ stuinfo.s.stu_name }}
+    学号：{{ stuinfo.s.stu_num }}
+    性别: {{ stuinfo.s.stu_sex }}
+    头像：
+    {% if stuinfo.i_image %}
+        <img src="/media/{{ stuinfo.i_image }}" width="100" height="100">
+    {% endif %}
+    <br>
+{% endfor %}
+<input type='button' value='返回'  onclick="document.location.href='/stu/addstu'">
+</body>
+</html>
